@@ -4,8 +4,10 @@ jobs:
   test:
     docker:
       - image: openpolicyagent/opa
+      - entrypoint: /opa
     steps:
-      - run: echo "my custom checkout"
+      - run: opa version
+      - run: opa test .
 
 workflows:
   version: 2
