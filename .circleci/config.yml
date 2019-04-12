@@ -6,8 +6,8 @@ jobs:
       - image: openpolicyagent/opa
     steps:
       - checkout
-      - run: --version
-      - run: test .
+      - run: opa version
+      - run: opa test .
 
 workflows:
   version: 2
