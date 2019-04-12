@@ -5,8 +5,7 @@ jobs:
     docker:
       - image: openpolicyagent/opa
     steps:
-      - run:
-          command: opa test .
+      - run: echo "my custom checkout"
 
 workflows:
   version: 2
