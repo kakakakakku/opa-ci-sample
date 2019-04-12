@@ -5,9 +5,8 @@ jobs:
     docker:
       - image: openpolicyagent/opa
     steps:
-      - checkout
-      - run: opa version
-      - run: opa test .
+      - run:
+          command: opa test .
 
 workflows:
   version: 2
