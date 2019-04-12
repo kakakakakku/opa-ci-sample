@@ -4,7 +4,7 @@ jobs:
   test:
     docker:
       - image: openpolicyagent/opa
-      - entrypoint: /opa
+        entrypoint: /opa
     steps:
       - run: opa version
       - run: opa test .
